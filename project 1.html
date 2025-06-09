@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Typing Master Pro - Online Typing Test</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<h1>Typing Tester Pro</h1>
+
+<div class="controls">
+  <label for="timeSelect">Select Time (minutes): </label>
+  <select id="timeSelect">
+  </select>
+
+  <label for="levelSelect">Select Level: </label>
+  <select id="levelSelect">
+    <option value="easy">Easy</option>
+    <option value="medium" selected>Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <button id="startBtn">Start Test</button>
+</div>
+
+<div class="text-display" id="textDisplay"></div>
+
+<textarea id="inputArea" placeholder="Start typing here..." disabled></textarea>
+
+<div class="stats">
+  <div>Time Left: <span id="timeLeft">00:00</span></div>
+  <div>WPM: <span id="wpm">0</span></div>
+  <div>Accuracy: <span id="accuracy">0%</span></div>
+</div>
+
+<div class="history">
+  <h3>Last 5 Attempts</h3>
+  <ul id="historyList" class="history-list"></ul>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
